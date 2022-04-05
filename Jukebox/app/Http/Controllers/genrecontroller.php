@@ -20,7 +20,7 @@ class genrecontroller extends Controller
         $Songs= Song::all();
         $Genres= Genre::all();
 
-        return view('genres', compact( 'Genres'));
+        return view('genres', compact('Songs', 'Genres'));
     }
 
     public function genreAdd()

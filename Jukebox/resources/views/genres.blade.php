@@ -14,7 +14,7 @@
                 @foreach($Genres as $genre)
                     <tr>
                         <td class="px-4">{{$genre->name}}</td>
-                        <td class="px-4"><a href="/genres/{{$genre->id}}">Ga naar Genre</a></td>
+                        <td class="px-4 text-red-600"><a href="/genres/{{$genre->id}}">Ga naar Genre</a></td>
                     </tr>
                 @endforeach
             </table>

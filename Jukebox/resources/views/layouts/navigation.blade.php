@@ -37,7 +37,7 @@
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('addGenre')" :active="request()->routeIs('addGenre')">
-                        {{ __('addGenre') }}
+                        {{ __('Add Genre') }}
                     </x-nav-link>
                 </div>
             </div>

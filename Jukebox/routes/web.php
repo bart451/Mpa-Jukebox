@@ -35,4 +35,7 @@ Route::get('/songsession', [App\Http\Controllers\sessioncontroller::class, 'inde
 Route::get('/addGenre', [\App\Http\Controllers\genreController::class, 'genreAdd'])->name('addGenre');
 Route::post('/addGenre', [\App\Http\Controllers\genreController::class, 'genreAdding'])->name('addGenre');
 
+Route::get('/addSong', [\App\Http\Controllers\SongController::class, 'addSong'])->name('addSong');
+Route::post('/addSong', [\App\Http\Controllers\SongController::class, 'SongAdding'])->name('addSong');
+
 require __DIR__ . '/auth.php';
