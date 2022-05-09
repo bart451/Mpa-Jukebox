@@ -33,6 +33,6 @@ class genrecontroller extends Controller
         $genre = new Genre();
         $genre->name = $request->input('genreName');
         $genre->save();
-        return view('genres');
+        return view('addGenre');
     }
 }

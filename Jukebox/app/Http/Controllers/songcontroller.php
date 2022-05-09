@@ -26,8 +26,7 @@ class songcontroller extends Controller
         $song = new Song();
         $song->songname = $request->input('songName');
         $song->genres = $request->input('genre');
-
         $song->save();
-        return view('songs');
+        return view('addSong');
     }
 }

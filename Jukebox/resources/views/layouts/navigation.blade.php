@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
                     </a>
                 </div>
 
@@ -30,14 +30,14 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('songsession')" :active="request()->routeIs('songsession')">
-                        {{ __('songsession') }}
+                    <x-nav-link :href="route('databasePlaylist')" :active="request()->routeIs('databasePlaylist')">
+                        {{ __('Playlist') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('addGenre')" :active="request()->routeIs('addGenre')">
-                        {{ __('Add Genre') }}
+                    <x-nav-link :href="route('addPlaylist')" :active="request()->routeIs('addPlaylist')">
+                        {{ __('Session Playlist') }}
                     </x-nav-link>
                 </div>
             </div>

@@ -10,12 +10,14 @@
                 <tr>
                     <th class="bg-blue-700 text-black px-2">Song</th>
                     <th class="bg-blue-700 text-black px-2">Datum toegevoegd</th>
+                    <th class="bg-blue-700 text-black px-2">Playlist</th>
                     <th class="bg-blue-700 text-black px-2">Genre</th>
                 </tr>
                 @foreach($Songs as $song)
                     <tr>
                         <td class="px-4">{{$song->songname}}</td>
                         <td class="px-4">{{$song->created_at}}</td>
+                        <td class="px-4"><a href="/playlist/add/{{$song->id}}">Add to playlist</a></td>
                         <td class="px-4">{{$song->genreName()->name}}</td>
                     </tr>
                 @endforeach
